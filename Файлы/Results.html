@@ -1,0 +1,40 @@
+<html>
+<head>
+	
+	<title>Результат</title>
+
+	<link rel="icon" href="../Фото/Menu add.png">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: black;
+			color: white;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 20px;
+		}
+	</style>
+
+</head>
+<body>
+	
+	<div id="Results"></div>
+
+	<script>
+		const ResultsList = document.getElementById('Results')
+		new URLSearchParams(window.location.search).forEach((value, name) => {
+			ResultsList.append(`${name}:${value}`)
+			ResultsList.append(document.createElement('br'))
+		})
+	</script>
+
+	<hr size="5px" color="white">
+
+</body>
+</html>

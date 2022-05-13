@@ -1,0 +1,148 @@
+<html>
+<head>
+	
+	<title>Video and Audio</title>
+	<link rel="icon" href="../Фото/Play.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Montserrat', sans-serif;
+			background-color: black;
+			color: white;
+		}
+
+		ul.topnav {
+			display: flex;
+			justify-content: center;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+			position: sticky;
+			top: 0;
+		}
+
+		ul.topnav li a, .dropbtn {
+			display: inline-block;
+			padding: 20px;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.dropdown-content a:hover {background-color: #f1f1f1;}
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		ul.topnav li a:hover {
+			background-color: #111;
+			transition: .2s;
+		}
+		@media screen and (max-width: 600px) {
+			ul.topnav li {float: none;}
+		}
+	</style>
+
+</head>
+<body>
+
+	<center>
+		<h1>Scroll down</h1>
+		<p>Scroll down</p>
+	</center>
+
+	<ul class="topnav">
+		<li><a href="Main page.html">Main page</a></li>
+		<li><a href="About me.html">About me</a></li>
+		<li><a href="Menu.html">Menu</a></li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Dropdown</a>
+			<div class="dropdown-content">
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+			</div>
+		</li>
+	</ul>
+
+
+
+
+
+	<div style="text-align: center; margin-top: 20px;">
+		<button onclick="playPause()">Play/Pause</button>
+		<button onclick="makeBig()">Big</button>
+		<button onclick="makeSmall()">Small</button>
+		<button onclick="makeNormal()">Normal</button>
+		<br>
+		<br>
+		<video id="Video" width="750" controls>
+			<source src="../Видео и Аудио/Iceland.mp4" type="video/mp4">
+			</video>
+		</div>
+
+
+
+		<script>
+			var myVideo = document.getElementById("Video");
+
+			function playPause() {
+				if (myVideo.paused)
+					myVideo.play();
+				else 
+					myVideo.pause();
+			}
+
+			function makeBig() {
+				myVideo.width = 1000;	
+			}
+
+			function makeSmall() {
+				myVideo.width = 500;
+			}
+
+			function makeNormal() {
+				myVideo.width = 750;
+			}
+		</script>	
+
+
+
+
+
+		<div style="text-align: center; margin-top: 50px;">
+			<h3>Молчат Дома - Судно (Борис Рыжий)</h3>
+			<audio controls>
+				<source src="../Видео и Аудио/Судно.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+
+
+
+			<center><h1>Example</h1></center>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusamus, esse! Ea, laborum accusantium quia numquam voluptatibus eaque earum id, laudantium reprehenderit. Velit obcaecati voluptatum distinctio nobis impedit vero, adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates provident nihil corporis qui possimus non, inventore fugit illo quam hic nesciunt voluptatum laborum minus cumque, eius obcaecati, sit dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis est odio et illo, vitae nesciunt autem quibusdam, molestiae, delectus doloribus consectetur eos assumenda ea, necessitatibus voluptatem ut dolores exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quasi labore quo natus aliquam maxime aperiam voluptas, dolore dolorem asperiores molestiae nulla rem tenetur assumenda eligendi in eveniet ea illo! Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Voluptatibus quia porro ipsam, quo maxime, aliquid corporis beatae nisi voluptas facilis aperiam repellat. Modi, debitis, fugit delectus enim minus officia magnam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus cum placeat, ea hic architecto assumenda veniam nihil dolore impedit quae a totam ad libero nemo neque, sapiente esse fugit adipisci! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae neque exercitationem nemo animi similique atque qui ratione sit laborum ullam placeat culpa dolor, ut architecto harum modi itaque eum magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptates libero cupiditate quos sint, placeat aut quasi, animi, voluptas sed cum ducimus eligendi incidunt reiciendis similique sapiente doloremque et mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, reprehenderit facilis sint labore iusto nostrum ad voluptates ullam dolorum enim, cumque temporibus modi, iure eligendi nihil corporis accusamus aspernatur ex? Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Ad consequuntur illum esse architecto iste laudantium ab, cupiditate? Blanditiis vitae rem saepe placeat eveniet obcaecati ad consectetur, tempore impedit aperiam perferendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, quos, mollitia. Veritatis officiis modi odit voluptatibus pariatur dicta, id nam voluptas velit amet quo ducimus enim dignissimos adipisci illum porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde commodi iste cum hic fuga ex suscipit totam laboriosam eum vel quasi, ab architecto optio enim inventore cumque tenetur neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem molestias veniam dolores minus quibusdam dolorum, labore deleniti delectus optio similique odit quam, rerum ullam, assumenda et modi dicta sed. Optio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium, molestiae laboriosam impedit, quidem similique quia hic. A, quibusdam iste doloremque nihil velit doloribus nobis illo enim perferendis quisquam, unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo suscipit corrupti nam fugit expedita atque hic accusantium! Necessitatibus atque fugiat magni, accusantium laudantium, quod doloribus sunt magnam, animi reprehenderit, dolore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro iste praesentium rem odio voluptatum temporibus, numquam saepe sunt iusto, maiores quibusdam ab, quos, maxime enim quae blanditiis! Illum eveniet, distinctio? Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Iusto fuga cumque consequatur aperiam similique dignissimos velit nostrum alias. Dolor repellat qui eaque obcaecati, provident enim reiciendis aspernatur reprehenderit dolores pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cupiditate quod, eos corporis assumenda numquam ipsa ut error sit voluptatum ipsam deserunt provident dignissimos at porro aperiam earum nulla perspiciatis. Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae sint est iure sunt enim laboriosam commodi vitae, tempore corporis deleniti fugit iusto adipisci modi odit rerum alias, quaerat. Mollitia, ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus enim saepe ad amet quod repellat culpa! Quas voluptate cumque quam eius? Unde consectetur, suscipit deserunt! Temporibus delectus sed aliquid corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio alias aperiam ut autem quia facilis ipsum, praesentium architecto aut, consequatur tempore sunt est iste mollitia esse. Corporis, voluptates magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id perspiciatis earum vel a, corrupti? Odit quae minus soluta, quod fugiat, reiciendis. Quos sequi nihil facere aperiam, reprehenderit voluptatem. Id, cumque. Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Labore, dolor neque quae officia molestiae in exercitationem quas sint est nulla iste modi, aspernatur iure! Vel maxime et pariatur error excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor autem, voluptate rem error eius aliquid adipisci tempore, exercitationem eos corrupti maxime ipsum inventore tenetur quos itaque asperiores doloremque iusto alias! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, explicabo iste praesentium repellendus est doloribus iusto fuga in provident sed quis tenetur perferendis fugit, debitis omnis sint dolorum! Laudantium, quasi. Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Consequuntur, odit, temporibus. Sed praesentium ratione consequatur distinctio mollitia rerum reiciendis, ut soluta alias nesciunt commodi aliquid, saepe laborum iusto ea magnam? Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Eveniet suscipit, neque veritatis architecto unde error dolorum ullam odio, labore, dolores harum nesciunt vitae, sit quae provident. Illum odit, quidem beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nostrum, eligendi provident tempora ipsa minima doloremque qui magni non ipsum suscipit dolores vel aut maxime atque harum inventore sit soluta? Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quam error ea doloremque nesciunt aperiam eligendi nostrum facere blanditiis repellendus est soluta mollitia maiores vitae, quia. Dignissimos quasi, excepturi earum exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum distinctio in eligendi magnam animi deserunt aut, esse a dignissimos repudiandae cumque quaerat eveniet expedita ullam atque inventore dolore sint vel!</p>
+
+		</div>
+	</body>
+	</html>

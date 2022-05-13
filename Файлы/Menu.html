@@ -1,0 +1,257 @@
+<html>
+<head>
+
+	<title>Меню</title>
+	
+	<link rel="icon" href="../Фото/Menu.png">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: black;
+			color: white;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 15px;
+		}
+
+		.header {
+			width: 100%;
+			margin: 20px auto 20px;
+		}
+
+		.container {
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.header__inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.header__logo {
+			font-size: 40px;
+			font-weight: 1000;
+		}
+
+		.nav {
+			text-transform: uppercase;
+			font-weight: 1000;
+		}
+
+		.nav__link {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 20px;
+
+			color: white;
+			text-decoration: none;
+
+			transition: color .2s;
+		}
+
+		.nav__link:hover {
+			color: #0071eb;
+		}
+
+		table, td, th {
+			border: 1px solid white;
+			border-collapse: collapse;
+		}
+		.wrap {
+			width: 1320px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.block {
+			float: left;
+			font-size: 20px;
+			margin: 40px 150px 40px;
+		}
+		.label {
+			text-align: right;
+		}
+		.button {
+			margin: 20px 20px 20px 20px;
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+
+				<div class="header__logo">Aibol Kazbaev</div>
+
+				<nav class="nav">
+					<a class="nav__link" href="Main page.html">Main page</a>
+					<a class="nav__link" href="Video_Audio.html">Video and Audio</a>
+					<a class="nav__link" href="About me.html">Back</a>
+				</nav>
+
+			</div>
+		</div>
+	</header>
+
+
+
+
+
+	<hr size="5px" color="white">
+
+
+
+
+
+	<h3 style="text-align: center; font-size: 30px;">Университет асханасының мәзірі</h3>
+	<h3 style="text-align: center; font-size: 25px;">КСиПО кафедрасы</h3>
+
+	<hr size="5px" color="1">
+
+
+
+	<form action="Results.html" method="GET">
+		<div class="wrap">
+			<div class="block">
+				<p><strong style="margin-right: 10px;">Тип заказа:</strong>
+					<select name="Тип заказа">
+						<label for="Здесь"><option value="Здесь">Здесь</option></label>
+						<label for="Собой"><option value="Собой">Собой</option></label>
+						<label for="Доставка"><option value="Доставка">Доставка</option></label>
+					</select></p>
+
+					<p><strong>Здесь</strong> - <em>Бесплатно</em></p>
+					<p><strong>Собой</strong> - <em>Бесплатно</em></p>
+					<p><strong>Доставка</strong> - <em>500 тг</em></p>
+				</div>
+
+
+
+				<div class="block">
+					<div class="label">
+						<p><label for="Имя"><strong>Имя:</strong><input type="text" id="Имя" name="Имя" value=""></label></p>
+
+						<p><label for="Адрес"><strong>Адрес:</strong><input type="text" id="Адрес" name="Адрес" value=""></label></p>
+
+						<p><label for="Телефон"><strong>Телефон:</strong><input type="text" id="Телефон" name="Телефон" value=""></label></p>
+
+						<p><label for="Номер карты"><strong>Номер карты:</strong><input type="text" id="Номер карты" name="Номер карты" value=""></label></p>
+					</div>
+				</div>
+			</div>
+
+			<hr size="5px" color="1" style="margin-bottom: 40px;">
+
+
+
+			<table style="width: 100%;">
+
+				<tr>
+					<th colspan="6" style="font-size: 20px;">Выпечка</th>
+				</tr>
+
+				<tr>
+					<th colspan="2">Xачапури</th>
+					<th colspan="2">Xизкейк</th>
+					<th colspan="2">Пончики</th>
+				</tr>
+
+				<tr>
+
+					<td><img src="../Фото еды/Хачапури.jpg" alt="Хачапури" width="250px"></td>
+
+					<td><strong><input type="checkbox" name="Хачапури">Цена: 100тг</strong><p><em>Кефир, яйца, сливочное масло, сыр</em></p></td>
+
+					<td><img src="../Фото еды/Чизкейк.jpg" alt="Чизкейк" width="250px"></td>
+
+					<td><strong><input type="checkbox" name="Чизкейк">Цена: 200тг</strong><p><em>Печенье песочное, сливочный сыр, яйца, сахарная пудра, горький шоколад</em></p></td>
+
+					<td><img src="../Фото еды/Пончики.jpg" alt="Пончики" width="250px"></td>
+
+					<td><strong><input type="checkbox" name="Пончики">Цена: 150тг</strong><p><em>Сахар, сливочное масло, соль, растительное масло</em></p></td>
+
+				</tr>
+
+
+
+
+
+				<tr>
+					<th colspan="6" style="font-size: 20px;">Салаты</th>
+				</tr>
+
+				<tr>
+					<th colspan="2">Салат курица и корейская морковь</th>
+					<th colspan="2">Салат капуста</th>
+					<th colspan="2">Салат зеленый лук с яйцом</th>
+				</tr>
+
+				<tr>
+
+					<td><img src="../Фото еды/Салат курица и корейская морковь.jpg" alt="Салат курица и корейская морковь" width="250px"></td>
+
+					<td><strong><input type="checkbox" name="Салат курица и корейская морковь">Цена: 150тг</strong><p><em>Куриные грудки, морковь, лук репчатый, соль, перец острый молотый</em></p></td>
+
+					<td><img src="../Фото еды/Салат капуста с уксусом и маслом.jpg" alt="Салат капуста с уксусом и маслом" width="250px"></td>
+
+					<td><strong><input type="checkbox" name="Салат капуста с уксусом и маслом">Цена: 150тг</strong><p><em>Капуста, укроп, зеленый лук, петрушка, оливковое масло, яблочный уксус, соль, перец</em></p></td>
+
+					<td><img src="../Фото еды/Салат зеленый лук с яйцом.jpg" alt="Салат зеленый лук с яйцом" width="250px"></td>
+
+					<td><strong><input type="checkbox" name="Салат зеленый лук с яйцом">Цена: 150тг</strong><p><em>Куриные яйца, зеленый лук, укроп, майонез, соль, перец</em></p></td>
+
+				</tr>
+
+
+
+
+
+				<tr>
+					<th colspan="6" style="font-size: 20px;">Вторые горячие блюда</th>
+				</tr>
+
+				<tr>
+					<th colspan="2">Голубцы</th>
+					<th colspan="2">Вареники</th>
+					<th colspan="2">Плов</th>
+				</tr>
+
+				<tr>
+
+					<td><img src="../Фото еды/Ленивые голубцы с рисом капустой и фаршем в кастрюле.jpg" alt="Ленивые голубцы с рисом капустой и фаршем в кастрюле" width="250px"></td>
+
+					<td><strong><input type="checkbox" name="Ленивые голубцы с рисом капустой и фаршем в кастрюле">Цена: 200тг</strong><p><em>Фарш мясной, капуста белокочанная, лук репчатый, морковь, рис, куриные яйца, пшеничная мука</em></p></td>
+
+					<td><img src="../Фото еды/Вареники на воде с картошкой.jpg" alt="Вареники на воде с картошкой" width="250px"></td>
+
+					<td><strong><input type="checkbox" name="Вареники на воде с картошкой">Цена: 200тг</strong><p><em>Яйца, растительное масло, соль, картошка, лук, сметана</em></p></td>
+
+					<td><img src="../Фото еды/Плов в духовке с курицей.jpg" alt="Плов в духовке с курицей" width="250px"></td>
+
+					<td><strong><input type="checkbox" name="Плов в духовке с курицей">Цена: 200тг</strong><p><em>Курица, рис, лук, морковь, чеснок, соль</em></p></td>
+
+				</tr>
+
+			</table>
+
+			<div class="button">
+				<input type="submit" value="Отправить">
+			</div>
+
+		</form>
+
+	</body>
+	</html>
